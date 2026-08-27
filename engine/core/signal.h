@@ -10,9 +10,7 @@ typedef struct signal {
 	double sample_rate_hz;
 	double center_freq_hz;
 	void *metadata;
-}
-
-signal_t;
+} signal_t;
 
 signal_t *signal_create(size_t n_samples, double sample_rate_hz, double center_freq_hz);
 

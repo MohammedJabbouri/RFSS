@@ -3,11 +3,11 @@
 #include <string.h>
 #include <complex.h>
 
-signal_t *signal_create(size_t n_samples, double sample_rate_hz, double center_freq_hz);
-	signal_t *sig = malloc(sizeof(signal_t);
+signal_t *signal_create(size_t n_samples, double sample_rate_hz, double center_freq_hz) {
+	signal_t *sig = malloc(sizeof(signal_t));
 	if (!sig) return NULL;
 
-	sig->samples = calloc(n_samples,sizeof(float complex)) {
+	sig->samples = calloc(n_samples,sizeof(float complex));
 	if (!sig->samples && n_samples > 0) {
 		free(sig);
 		return NULL;
@@ -49,10 +49,11 @@ int signal_resize(signal_t *sig, size_t new_n_samples) {
 signal_t *signal_copy(const signal_t *sig) {
 	if (!sig) return NULL;
 
-	signal_t *copy = signal_create(sig->n_samples, sig->sample_rate_hz, sig>center_freq_hz);
+	signal_t *copy = signal_create(sig->n_samples, sig->sample_rate_hz, sig->center_freq_hz);
 	if (!copy) return NULL;
 
 	memcpy(copy->samples, sig->samples, sig->n_samples * sizeof(float complex));
+
 	copy->metadata = sig->metadata;
 	
 	return copy;
