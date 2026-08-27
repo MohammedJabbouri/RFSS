@@ -17,3 +17,15 @@ While the differential form looks a little simpler, but it is more precise than 
 $$\nabla \times \vec{E} = \frac{\rho}{\epsilon_0}$$
 
 Nabla (the triangle) is the divergence, times the vector E which we went over, is equal to rho volume charge density, and epsilon 0 is also something we went over.
+
+**Gauss's Magneticism Law**
+
+Another one by Gauss, it states the net magnetic flux through a closed surface will always remain 0. 
+
+$$\oint B \times dA = 0$$
+
+B, the magnetic flux is integrated over the surface, which is just zero.
+
+$$\nabla \times B = 0$$
+
+Divergence times the magnetic flux is also 0 everywhere in space.
