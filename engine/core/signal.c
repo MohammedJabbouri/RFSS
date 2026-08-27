@@ -34,7 +34,7 @@ int signal_resize(signal_t *sig, size_t new_n_samples) {
 		return -1;
 	}
 
-	if (new_n_samples > sign->n_samples) {
+	if (new_n_samples > sig->n_samples) {
 		size_t old_bytes = sig->n_samples * sizeof(float complex);
 		size_t new_bytes = new_n_samples * sizeof(float complex);
 		memset((char *)grown + old_bytes, 0, new_bytes - old_bytes);
@@ -44,6 +44,8 @@ int signal_resize(signal_t *sig, size_t new_n_samples) {
 
 		return 0;
 	}
+
+	return 0;
 }
 
 signal_t *signal_copy(const signal_t *sig) {
