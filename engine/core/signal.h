@@ -4,12 +4,18 @@
 #include <complex.h>
 #include <stddef.h>
 
+typedef void *(*metadata_copy_fn)(const void *metadata);
+typedef void  (*metadata_free_fn)(void *metadata);
+
 typedef struct signal {
 	float complex *samples;
 	size_t n_samples;
 	double sample_rate_hz;
 	double center_freq_hz;
+
 	void *metadata;
+	metadata_copy_fn meta_copy;
+	metadata_free_fn meta_free;
 } signal_t;
 
 signal_t *signal_create(size_t n_samples, double sample_rate_hz, double center_freq_hz);
