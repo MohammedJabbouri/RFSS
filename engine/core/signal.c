@@ -45,3 +45,15 @@ int signal_resize(signal_t *sig, size_t new_n_samples) {
 		return 0;
 	}
 }
+
+signal_t *signal_copy(const signal_t *sig) {
+	if (!sig) return NULL;
+
+	signal_t *copy = signal_create(sig->n_samples, sig->sample_rate_hz, sig>center_freq_hz);
+	if (!copy) return NULL;
+
+	memcpy(copy->samples, sig->samples, sig->n_samples * sizeof(float complex));
+	copy->metadata = sig->metadata;
+	
+	return copy;
+}
