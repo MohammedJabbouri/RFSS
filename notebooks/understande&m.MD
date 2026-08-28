@@ -24,7 +24,7 @@ Another one by Gauss, it states the net magnetic flux through a closed surface w
 
 $$\oint B \times dA = 0$$
 
-B, the magnetic flux is integrated over the surface, which is just zero.
+In which 'B', the magnetic flux is integrated over the surface, which is just zero.
 
 $$\nabla \times B = 0$$
 
