@@ -1,5 +1,4 @@
 #include "chains.h"
-#include "chain.h"
 #include <stdlib.h>
 #include <string.h>
 
@@ -25,7 +24,7 @@ chains_registry_t *chains_registry_create(void) {
 
   if (!reg->entries) {
     free(reg);
-    return NULL
+    return NULL;
   }
 
   reg->count = 0;
