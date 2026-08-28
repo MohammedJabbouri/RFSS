@@ -8,6 +8,20 @@ This project is made mostly in C, and it is made to support a research project, 
 
 This will be added later on once it's more stable.
 
+# Change Log
+
+Currently in development, so Pre-Alpha 0.0.0.
+
+- As of 08/27/2026, chains.h/c, signal.h/c are done.
+
+# Roadmap
+
+* Core done by 9/7/2026
+* Antenna done by 9/10/2026
+* Waveforms done by 9/13/2026
+
+* Launch expected 9/27/2026
+
 # Contacts
 
 If you ever need to contact any of us, you can find our emails here:
