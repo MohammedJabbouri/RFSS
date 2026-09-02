@@ -16,8 +16,6 @@ struct chains_registry {
   size_t count;
 };
 
-// MAYBE AN ERROR HERE WITH MALLOC MIGHT DO CALLOC
-
 chains_registry_t *chains_registry_create(void) {
   
   chains_registry_t *reg = malloc(sizeof(chains_registry_t));
