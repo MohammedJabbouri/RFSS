@@ -57,7 +57,7 @@ transform_t awgn_create(float snr_db, uint64_t seed) {
 
 	ctx->snr_db = snr_db;
 
-	rng_seed(&ctx->rng, seed, 1);
+	rng_seed(&ctx->rng, seed, stream);
 
 	return (transform_t, seed, 1);
 

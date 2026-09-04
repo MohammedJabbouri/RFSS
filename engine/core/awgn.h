@@ -4,6 +4,6 @@
 #include <stdint.h>
 #include "../core/transform.h"
 
-transform_t awgn_create(float snr_db, uint64_t seed);
+transform_t awgn_create(float snr_db, uint64_t seed, uint64_t stream);
 
 #endif
