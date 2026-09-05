@@ -1,8 +1,8 @@
 #ifndef ENGINE_CLI_SETTINGS_H
-
 #define ENGINE_CLI_SETTINGS_H
 
 #include <stddef.h>
+#include <stdint.h>
 #include "config.h"
 #include "../core/transform.h"
 
